@@ -39,25 +39,25 @@
             --dark-gray: #475569;
             --dark: #1e293b;
             --black: #020617;
-            
+
             /* Bordes y sombras */
             --border-radius-sm: 8px;
             --border-radius: 12px;
             --border-radius-lg: 16px;
             --border-radius-xl: 24px;
             --border-radius-full: 9999px;
-            
+
             --box-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
             --box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
             --box-shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
             --box-shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
             --box-shadow-xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-            
+
             /* Transiciones y animaciones */
             --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
             --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            
+
             /* Fuentes */
             --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             --font-size-xs: 0.75rem;
@@ -68,7 +68,7 @@
             --font-size-2xl: 1.5rem;
             --font-size-3xl: 1.875rem;
             --font-size-4xl: 2.25rem;
-            
+
             /* Espaciado */
             --spacing-1: 0.25rem;
             --spacing-2: 0.5rem;
@@ -80,7 +80,7 @@
             --spacing-10: 2.5rem;
             --spacing-12: 3rem;
             --spacing-16: 4rem;
-            
+
             /* Tamaños de contenedor */
             --container-sm: 640px;
             --container-md: 768px;
@@ -113,7 +113,7 @@
             --dark-gray: #94a3b8;
             --dark: #e2e8f0;
             --black: #f8fafc;
-            
+
             --box-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
             --box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
             --box-shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
@@ -436,6 +436,7 @@
                 opacity: 0;
                 transform: translateY(10px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -805,7 +806,7 @@
             left: 50%;
             width: 120%;
             height: 120%;
-            background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 70%);
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 70%);
             opacity: 0;
             transform: translate(-50%, -50%) scale(0.5);
             transition: transform 0.5s, opacity 0.5s;
@@ -1225,6 +1226,7 @@
                 opacity: 0;
                 transform: scale(0.9) translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: scale(1) translateY(0);
@@ -1671,6 +1673,7 @@
             0% {
                 transform: rotate(0deg);
             }
+
             100% {
                 transform: rotate(360deg);
             }
@@ -1798,7 +1801,7 @@
                 gap: var(--spacing-3);
             }
 
-            .search-input-wrapper, 
+            .search-input-wrapper,
             .filter-select {
                 width: 100%;
                 min-width: 100%;
@@ -1843,11 +1846,12 @@
         }
 
         @media print {
-            .header, 
-            .stats-bar, 
-            .tabs-container, 
-            .footer, 
-            .theme-toggle, 
+
+            .header,
+            .stats-bar,
+            .tabs-container,
+            .footer,
+            .theme-toggle,
             .toast-container,
             .action-bar,
             .search-bar,
@@ -1866,9 +1870,9 @@
                 padding: 0;
             }
 
-            .card, 
-            .bus-item, 
-            .empty-state, 
+            .card,
+            .bus-item,
+            .empty-state,
             .table-responsive,
             .norm-card {
                 box-shadow: none !important;
@@ -2007,7 +2011,8 @@
 
                                 <div class="norms-section">
                                     <div class="section-header">
-                                        <h3 class="section-title"><i class="fas fa-tasks"></i> Lista de Normas Gráficas</h3>
+                                        <h3 class="section-title"><i class="fas fa-tasks"></i> Lista de Normas Gráficas
+                                        </h3>
                                         <div class="section-actions">
                                             <button type="button" class="btn-icon-text" id="collapse-all">
                                                 <i class="fas fa-compress-alt"></i> Contraer Todo
@@ -2017,7 +2022,7 @@
                                             </button>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="norms-grid" id="norms-container">
                                         <!-- Las normas se agregarán dinámicamente aquí -->
                                     </div>
@@ -2030,7 +2035,7 @@
 
                                 <div class="form-group">
                                     <label class="form-label" for="observaciones">Observaciones</label>
-                                    <textarea class="form-control" id="observaciones" name="observaciones" rows="3" 
+                                    <textarea class="form-control" id="observaciones" name="observaciones" rows="3"
                                         placeholder="Ingrese observaciones adicionales"></textarea>
                                 </div>
 
@@ -2052,7 +2057,8 @@
                             <div class="search-bar">
                                 <div class="search-input-wrapper">
                                     <i class="fas fa-search"></i>
-                                    <input type="text" class="search-input" id="history-search" placeholder="Buscar por patente...">
+                                    <input type="text" class="search-input" id="history-search"
+                                        placeholder="Buscar por patente...">
                                 </div>
                                 <select class="form-control filter-select" id="history-filter">
                                     <option value="all">Todos los estados</option>
@@ -2086,7 +2092,7 @@
                                 <h3 class="empty-title">No hay registros de inspección</h3>
                                 <p class="empty-message">Las inspecciones realizadas aparecerán aquí.</p>
                             </div>
-                            
+
                             <nav aria-label="Paginación de historial">
                                 <ul class="pagination" id="history-pagination">
                                     <!-- La paginación se generará dinámicamente -->
@@ -2106,7 +2112,8 @@
                             <div class="search-bar">
                                 <div class="search-input-wrapper">
                                     <i class="fas fa-search"></i>
-                                    <input type="text" class="search-input" id="complete-search" placeholder="Buscar por patente...">
+                                    <input type="text" class="search-input" id="complete-search"
+                                        placeholder="Buscar por patente...">
                                 </div>
                                 <select class="form-control filter-select" id="complete-filter">
                                     <option value="all">Todas las marcas</option>
@@ -2124,9 +2131,10 @@
                                     <i class="fas fa-check-circle"></i>
                                 </div>
                                 <h3 class="empty-title">No hay buses completos</h3>
-                                <p class="empty-message">Los buses que tengan todas las normas instaladas o marcadas como "No corresponde" aparecerán aquí.</p>
+                                <p class="empty-message">Los buses que tengan todas las normas instaladas o marcadas
+                                    como "No corresponde" aparecerán aquí.</p>
                             </div>
-                            
+
                             <nav aria-label="Paginación de buses completos">
                                 <ul class="pagination" id="complete-pagination">
                                     <!-- La paginación se generará dinámicamente -->
@@ -2158,7 +2166,8 @@
                             <div class="search-bar">
                                 <div class="search-input-wrapper">
                                     <i class="fas fa-search"></i>
-                                    <input type="text" class="search-input" id="pending-search" placeholder="Buscar por patente...">
+                                    <input type="text" class="search-input" id="pending-search"
+                                        placeholder="Buscar por patente...">
                                 </div>
                                 <select class="form-control filter-select" id="pending-filter">
                                     <option value="all">Todas las normas</option>
@@ -2191,7 +2200,7 @@
                                 <h3 class="empty-title">No hay buses pendientes</h3>
                                 <p class="empty-message">Los buses con normas pendientes o dañadas aparecerán aquí.</p>
                             </div>
-                            
+
                             <nav aria-label="Paginación de buses pendientes">
                                 <ul class="pagination" id="pending-pagination">
                                     <!-- La paginación se generará dinámicamente -->
@@ -2212,22 +2221,22 @@
                                 <h3 class="chart-title">Estado General de la Flota</h3>
                                 <canvas id="fleet-status-chart"></canvas>
                             </div>
-                            
+
                             <div class="chart-container">
                                 <h3 class="chart-title">Top 5 Normas Pendientes</h3>
                                 <canvas id="pending-norms-chart"></canvas>
                             </div>
-                            
+
                             <div class="chart-container">
                                 <h3 class="chart-title">Progreso por Terminal</h3>
                                 <canvas id="terminal-progress-chart"></canvas>
                             </div>
-                            
+
                             <div class="chart-container">
                                 <h3 class="chart-title">Comparativa por Clase de Bus</h3>
                                 <canvas id="class-comparison-chart"></canvas>
                             </div>
-                            
+
                             <div class="action-bar">
                                 <button class="btn btn-outline" id="generate-complete-report">
                                     <i class="fas fa-file-alt"></i> Generar Informe Completo
@@ -2330,6 +2339,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.38.4/dist/umd/supabase.min.js"></script>
     <script>
+
         // Configuración de Supabase
         const SUPABASE_URL = 'https://tcmtxvuucjttngcazgff.supabase.co';
         const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRjbXR4dnV1Y2p0dG5nY2F6Z2ZmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDA3MjUwMDEsImV4cCI6MjA1NjMwMTAwMX0.2WcIjMUEhSM6j9kYpbsYArQocZdHx86k7wXk-NyjIs0';
@@ -2351,87 +2361,132 @@
         // Opciones de estado para normas
         const statusOptions = ["Instalada", "Pendiente", "Dañada", "No Corresponde"];
 
-        // Inicializar aplicación
-        document.addEventListener("DOMContentLoaded", async function() {
-            initializeApp();
+        // Un solo evento DOMContentLoaded para toda la inicialización
+        document.addEventListener("DOMContentLoaded", function () {
+            // Iniciamos la aplicación
+            initializeAppSafely();
+
+
         });
 
-        // Función principal de inicialización
-        async function initializeApp() {
-            try {
-                // Inicializar cliente Supabase
-                supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+        // Función segura de inicialización que maneja errores
+        function initializeAppSafely() {
+            // Usamos una función async auto-ejecutada para poder usar await
+            (async function () {
+                try {
+                    // Inicializar cliente Supabase
+                    supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
-                // Verificar conexión
-                const { data, error } = await supabaseClient.from('inspecciones').select('count');
+                    // Intentamos conectarnos primero, para ver si ya existen las tablas
+                    try {
+                        const { data, error } = await supabaseClient
+                            .from('inspecciones')
+                            .select('*')
+                            .limit(1);
 
-                if (error) throw error;
+                        // Si no hay error, estamos conectados y las tablas existen
+                        isConnected = true;
+                        updateConnectionStatus(true);
+                        showToast('success', 'Conexión Exitosa', 'Conectado correctamente a la base de datos');
+                    } catch (connectionError) {
+                        // Si hay error, intentamos crear las tablas
+                        console.log("Tablas no encontradas, intentando crearlas:", connectionError);
 
-                // Marcar como conectado si no hay error
-                isConnected = true;
-                updateConnectionStatus(true);
-                showToast('success', 'Conexión Exitosa', 'Conectado correctamente a la base de datos');
-            } catch (error) {
-                console.error('Error al conectar con Supabase:', error);
-                isConnected = false;
-                updateConnectionStatus(false);
-                showToast('error', 'Error de Conexión', 'No se pudo conectar a la base de datos. Trabajando en modo local.');
-            }
+                        try {
+                            // Intentamos crear las tablas requeridas
+                            const tablesCreated = await initializeDatabase();
 
-            // Inicializar componentes de la interfaz
-            initializeThemeToggle();
-            populatePPUDatalist();
-            updateDateTimeField();
-            setInterval(updateDateTimeField, 60000);
-            initializeTabSystem();
-            initializeFormHandling();
-            initializeModals();
-            initializeImagePreview();
-            initializeFilters();
-            initializeExportButtons();
-            initializePrintFunctionality();
-            initializeCharts();
+                            if (tablesCreated) {
+                                isConnected = true;
+                                updateConnectionStatus(true);
+                            } else {
+                                throw new Error("No se pudieron crear las tablas");
+                            }
+                        } catch (dbError) {
+                            // Si falla la creación de tablas, trabajamos en modo offline
+                            console.error("Error al crear tablas:", dbError);
+                            isConnected = false;
+                            updateConnectionStatus(false);
+                            showToast('warning', 'Modo Offline', 'Trabajando en modo local. Los datos se guardarán en este dispositivo.');
+                        }
+                    }
 
-            // Cargar datos iniciales
-            await loadInspectionData();
+                    // Inicializar componentes de la interfaz (esto sucede independientemente del estado de conexión)
+                    initializeThemeToggle();
+                    populatePPUDatalist();
+                    updateDateTimeField();
+                    setInterval(updateDateTimeField, 60000);
+                    initializeTabSystem();
+                    initializeFormHandling();
+                    initializeModals();
+                    initializeImagePreview();
+                    initializeFilters();
+                    initializeExportButtons();
+                    initializePrintFunctionality();
+                    initializeCharts();
 
-            // Verificar conexión periódicamente
-            setInterval(checkConnection, 30000);
+                    // Cargar datos iniciales (funcionará en modo offline si es necesario)
+                    await loadInspectionData();
+
+                    // Verificar conexión periódicamente
+                    setInterval(checkConnection, 30000);
+
+                } catch (error) {
+                    // Error general de inicialización
+                    console.error("Error fatal al inicializar la aplicación:", error);
+                    showToast('error', 'Error de Inicialización', 'Ocurrió un problema al inicializar la aplicación.');
+
+                    // Aún así, intentamos inicializar la UI básica para no quedar completamente bloqueados
+                    try {
+                        initializeThemeToggle();
+                        initializeTabSystem();
+                    } catch (e) {
+                        console.error("No se pudo inicializar la interfaz mínima:", e);
+                    }
+                }
+            })();
         }
 
-        // Inicializar toggle del tema
-        function initializeThemeToggle() {
-            const themeToggle = document.getElementById('theme-toggle');
-            const themeIcon = themeToggle.querySelector('i');
-            const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-            
-            // Verificar si hay un tema guardado o usar la preferencia del sistema
-            const currentTheme = localStorage.getItem('theme') || 
-                                (prefersDarkScheme.matches ? 'dark' : 'light');
-            
-            // Aplicar tema inicial
-            if (currentTheme === 'dark') {
-                document.body.setAttribute('data-theme', 'dark');
-                themeIcon.classList.replace('fa-moon', 'fa-sun');
-            }
-            
-            // Cambiar tema al hacer clic
-            themeToggle.addEventListener('click', () => {
-                const isDark = document.body.getAttribute('data-theme') === 'dark';
-                
-                if (isDark) {
-                    document.body.removeAttribute('data-theme');
-                    localStorage.setItem('theme', 'light');
-                    themeIcon.classList.replace('fa-sun', 'fa-moon');
-                } else {
-                    document.body.setAttribute('data-theme', 'dark');
-                    localStorage.setItem('theme', 'dark');
-                    themeIcon.classList.replace('fa-moon', 'fa-sun');
+
+        // Función para inicializar la base de datos
+        async function initializeDatabase() {
+            try {
+                showLoader('Inicializando base de datos...');
+
+                if (!supabaseClient) {
+                    supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
                 }
-                
-                // Actualizar los gráficos si están inicializados
-                updateChartsTheme();
-            });
+
+                // Implementación simple para verificar y crear tablas
+                let success = false;
+
+                try {
+                    // Primero probamos el método SQL directo
+                    success = await createTablesDirectly();
+                } catch (sqlError) {
+                    console.error("Error al crear tablas directamente:", sqlError);
+
+                    try {
+                        // Si falla, intentamos con la función RPC
+                        success = await createTablesViaRPC();
+                    } catch (rpcError) {
+                        console.error("Error al crear tablas via RPC:", rpcError);
+                        throw new Error("No se pudieron crear las tablas por ningún método");
+                    }
+                }
+
+                if (!success) {
+                    throw new Error("No se pudo verificar la creación de tablas");
+                }
+
+                return true;
+            } catch (error) {
+                console.error('Error al inicializar la base de datos:', error);
+                showToast('error', 'Error de inicialización', 'No se pudo inicializar la base de datos: ' + error.message);
+                return false;
+            } finally {
+                hideLoader();
+            }
         }
 
         // Verificar conexión a Supabase
@@ -2439,7 +2494,10 @@
             try {
                 if (!supabaseClient) return;
 
-                const { data, error } = await supabaseClient.from('inspecciones').select('count', { count: 'exact' }).limit(1);
+                const { data, error } = await supabaseClient
+                    .from('inspecciones')
+                    .select('*')
+                    .limit(1);
 
                 if (error) throw error;
 
@@ -2475,11 +2533,46 @@
             }
         }
 
+        // Inicializar toggle del tema
+        function initializeThemeToggle() {
+            const themeToggle = document.getElementById('theme-toggle');
+            const themeIcon = themeToggle.querySelector('i');
+            const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+            // Verificar si hay un tema guardado o usar la preferencia del sistema
+            const currentTheme = localStorage.getItem('theme') ||
+                (prefersDarkScheme.matches ? 'dark' : 'light');
+
+            // Aplicar tema inicial
+            if (currentTheme === 'dark') {
+                document.body.setAttribute('data-theme', 'dark');
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+            }
+
+            // Cambiar tema al hacer clic
+            themeToggle.addEventListener('click', () => {
+                const isDark = document.body.getAttribute('data-theme') === 'dark';
+
+                if (isDark) {
+                    document.body.removeAttribute('data-theme');
+                    localStorage.setItem('theme', 'light');
+                    themeIcon.classList.replace('fa-sun', 'fa-moon');
+                } else {
+                    document.body.setAttribute('data-theme', 'dark');
+                    localStorage.setItem('theme', 'dark');
+                    themeIcon.classList.replace('fa-moon', 'fa-sun');
+                }
+
+                // Actualizar los gráficos si están inicializados
+                updateChartsTheme();
+            });
+        }
+
         // Poblar el datalist de PPU para autocompletado
         function populatePPUDatalist() {
             const datalist = document.getElementById('ppu-list');
             datalist.innerHTML = '';
-            
+
             fleetData.forEach(bus => {
                 const option = document.createElement('option');
                 option.value = bus.ppu;
@@ -2502,7 +2595,7 @@
                     // Mostrar página correspondiente
                     const tabId = tab.getAttribute('data-tab');
                     document.getElementById(tabId + '-page').classList.add('active');
-                    
+
                     // Actualizar gráficos si estamos en la página de informes
                     if (tabId === 'reports') {
                         updateAllCharts();
@@ -2518,151 +2611,165 @@
             const formattedDateForDisplay = now.toLocaleString('es-CL');
             // Formato ISO para Supabase
             const formattedDateForDB = now.toISOString();
-            
+
             // Mostrar formato legible para el usuario
-            document.getElementById('fecha').value = formattedDateForDisplay;
-            // Guardar formato ISO como un atributo de datos
-            document.getElementById('fecha').setAttribute('data-iso-date', formattedDateForDB);
+            const fechaElement = document.getElementById('fecha');
+            if (fechaElement) {
+                fechaElement.value = formattedDateForDisplay;
+                // Guardar formato ISO como un atributo de datos
+                fechaElement.setAttribute('data-iso-date', formattedDateForDB);
+            }
         }
 
         // Inicializar formulario
         function initializeFormHandling() {
+            // Manejar cambios en el campo PPU
             const ppuInput = document.getElementById('ppu');
-            ppuInput.addEventListener('input', function() {
-                const ppu = this.value.toUpperCase();
-                ppuInput.value = ppu; // Convertir a mayúsculas mientras se escribe
-                const bus = fleetData.find(b => b.ppu === ppu);
+            if (ppuInput) {
+                ppuInput.addEventListener('input', function () {
+                    const ppu = this.value.toUpperCase();
+                    this.value = ppu; // Convertir a mayúsculas mientras se escribe
+                    const bus = fleetData.find(b => b.ppu === ppu);
 
-                if (bus) {
-                    document.getElementById('clase').value = bus.clase;
-                    document.getElementById('marca').value = bus.marca;
-                    currentBusData = bus;
+                    if (bus) {
+                        document.getElementById('clase').value = bus.clase;
+                        document.getElementById('marca').value = bus.marca;
+                        currentBusData = bus;
 
-                    // Si no estamos en modo edición y se selecciona un bus, intentar cargar datos previos
-                    if (!isEditMode) {
-                        populateNorms();
-                        checkExistingInspection(ppu);
+                        // Si no estamos en modo edición y se selecciona un bus, intentar cargar datos previos
+                        if (!isEditMode) {
+                            populateNorms();
+                            checkExistingInspection(ppu);
+                        }
+                    } else {
+                        document.getElementById('clase').value = '';
+                        document.getElementById('marca').value = '';
+                        currentBusData = null;
+                        clearNorms();
                     }
-                } else {
-                    document.getElementById('clase').value = '';
-                    document.getElementById('marca').value = '';
-                    currentBusData = null;
-                    clearNorms();
-                }
-            });
+                });
+            }
 
             // Manejo del envío del formulario
-            document.getElementById('inspection-form').addEventListener('submit', async function(e) {
-                e.preventDefault();
-
-                if (!currentBusData) {
-                    showToast('error', 'Error', 'Por favor ingrese una patente válida');
-                    return;
-                }
-
-                // Verificar que todas las normas han sido respondidas
-                const unansweredNorms = document.querySelectorAll('.norm-card.unanswered');
-                if (unansweredNorms.length > 0) {
-                    showToast('warning', 'Formulario Incompleto', 'Por favor complete todas las normas antes de enviar.');
-                    
-                    // Scroll a la primera norma sin responder
-                    unansweredNorms[0].scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    
-                    // Resaltar visualmente
-                    unansweredNorms.forEach(norm => {
-                        norm.classList.add('pulse-animation');
-                        setTimeout(() => {
-                            norm.classList.remove('pulse-animation');
-                        }, 2000);
-                    });
-                    
-                    return;
-                }
-
-                // Mostrar cargador
-                showLoader('Guardando inspección...');
-
-                try {
-                    const formData = {
-                        ppu: document.getElementById('ppu').value.toUpperCase(),
-                        terminal: document.getElementById('terminal').value,
-                        clase: document.getElementById('clase').
-                            // Continuación del código desde donde quedamos
-                    const formData = {
-                        ppu: document.getElementById('ppu').value.toUpperCase(),
-                        terminal: document.getElementById('terminal').value,
-                        clase: document.getElementById('clase').value,
-                        marca: document.getElementById('marca').value,
-                        fecha: document.getElementById('fecha').value,
-                        fechaISO: document.getElementById('fecha').getAttribute('data-iso-date'),
-                        observaciones: document.getElementById('observaciones').value,
-                        norms: []
-                    };
-
-                    // Recopilar estado de las normas
-                    document.querySelectorAll('.norm-card').forEach(normItem => {
-                        const normTitle = normItem.querySelector('.norm-title').textContent;
-                        const selectedOption = normItem.querySelector('.status-option.selected');
-                        const status = selectedOption ? selectedOption.getAttribute('data-status') : null;
-
-                        if (status) {
-                            formData.norms.push({
-                                title: normTitle,
-                                status: status
-                            });
-                        }
-                    });
-
-                    // Guardar o actualizar datos de la inspección
-                    if (isEditMode && editInspectionIndex >= 0) {
-                        await updateInspection(formData, editInspectionIndex);
-                        showToast('success', 'Inspección Actualizada', 'Los datos se han actualizado correctamente');
-                    } else {
-                        await saveInspection(formData);
-                        showToast('success', 'Inspección Registrada', 'La inspección se ha registrado correctamente');
-                    }
-
-                    // Resetear formulario y estado
-                    this.reset();
-                    clearNorms();
-                    currentBusData = null;
-                    isEditMode = false;
-                    editInspectionIndex = -1;
-
-                    // Actualizar UI
-                    await loadInspectionData();
-                } catch (error) {
-                    console.error('Error al procesar la inspección:', error);
-                    showToast('error', 'Error', 'Ocurrió un problema al guardar la inspección');
-                } finally {
-                    hideLoader();
-                }
-            });
+            const inspectionForm = document.getElementById('inspection-form');
+            if (inspectionForm) {
+                inspectionForm.addEventListener('submit', handleFormSubmit);
+            }
 
             // Funcionalidad para contraer/expandir todas las normas
-            document.getElementById('collapse-all').addEventListener('click', function() {
-                document.querySelectorAll('.norm-card').forEach(card => {
-                    const statusOptions = card.querySelector('.status-options');
-                    if (statusOptions && !statusOptions.classList.contains('hidden')) {
-                        statusOptions.classList.add('hidden');
-                    }
+            const collapseAllBtn = document.getElementById('collapse-all');
+            if (collapseAllBtn) {
+                collapseAllBtn.addEventListener('click', function () {
+                    document.querySelectorAll('.norm-card').forEach(card => {
+                        const statusOptions = card.querySelector('.status-options');
+                        if (statusOptions && !statusOptions.classList.contains('hidden')) {
+                            statusOptions.classList.add('hidden');
+                        }
+                    });
                 });
-            });
+            }
 
-            document.getElementById('expand-all').addEventListener('click', function() {
-                document.querySelectorAll('.norm-card').forEach(card => {
-                    const statusOptions = card.querySelector('.status-options');
-                    if (statusOptions) {
-                        statusOptions.classList.remove('hidden');
+            const expandAllBtn = document.getElementById('expand-all');
+            if (expandAllBtn) {
+                expandAllBtn.addEventListener('click', function () {
+                    document.querySelectorAll('.norm-card').forEach(card => {
+                        const statusOptions = card.querySelector('.status-options');
+                        if (statusOptions) {
+                            statusOptions.classList.remove('hidden');
+                        }
+                    });
+                });
+            }
+        }
+
+        // Manejar envío del formulario
+        async function handleFormSubmit(e) {
+            e.preventDefault();
+
+            if (!currentBusData) {
+                showToast('error', 'Error', 'Por favor ingrese una patente válida');
+                return;
+            }
+
+            // Verificar que todas las normas han sido respondidas
+            const unansweredNorms = document.querySelectorAll('.norm-card.unanswered');
+            if (unansweredNorms.length > 0) {
+                showToast('warning', 'Formulario Incompleto', 'Por favor complete todas las normas antes de enviar');
+
+                // Scroll a la primera norma sin responder
+                unansweredNorms[0].scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+                // Resaltar visualmente
+                unansweredNorms.forEach(norm => {
+                    norm.classList.add('pulse-animation');
+                    setTimeout(() => {
+                        norm.classList.remove('pulse-animation');
+                    }, 2000);
+                });
+
+                return;
+            }
+
+            // Mostrar cargador
+            showLoader('Guardando inspección...');
+
+            try {
+                // Crear objeto de datos
+                const formData = {
+                    ppu: document.getElementById('ppu').value.toUpperCase(),
+                    terminal: document.getElementById('terminal').value,
+                    clase: document.getElementById('clase').value,
+                    marca: document.getElementById('marca').value,
+                    fecha: document.getElementById('fecha').value,
+                    fechaISO: document.getElementById('fecha').getAttribute('data-iso-date'),
+                    observaciones: document.getElementById('observaciones').value,
+                    norms: []
+                };
+
+                // Recopilar estado de las normas
+                document.querySelectorAll('.norm-card').forEach(normItem => {
+                    const normTitle = normItem.querySelector('.norm-title').textContent;
+                    const selectedOption = normItem.querySelector('.status-option.selected');
+                    const status = selectedOption ? selectedOption.getAttribute('data-status') : null;
+
+                    if (status) {
+                        formData.norms.push({
+                            title: normTitle,
+                            status: status
+                        });
                     }
                 });
-            });
+
+                // Guardar o actualizar datos de la inspección
+                if (isEditMode && editInspectionIndex >= 0) {
+                    await updateInspection(formData, editInspectionIndex);
+                    showToast('success', 'Inspección Actualizada', 'Los datos se han actualizado correctamente');
+                } else {
+                    await saveInspection(formData);
+                    showToast('success', 'Inspección Registrada', 'La inspección se ha registrado correctamente');
+                }
+
+                // Resetear formulario y estado
+                this.reset();
+                clearNorms();
+                currentBusData = null;
+                isEditMode = false;
+                editInspectionIndex = -1;
+
+                // Actualizar UI
+                await loadInspectionData();
+            } catch (error) {
+                console.error('Error al procesar la inspección:', error);
+                showToast('error', 'Error', 'Ocurrió un problema al guardar la inspección');
+            } finally {
+                hideLoader();
+            }
         }
 
         // Verificar si existe una inspección previa
         async function checkExistingInspection(ppu) {
             showLoader('Verificando registros previos...');
-            
+
             try {
                 let existingInspection = null;
 
@@ -2678,12 +2785,30 @@
                     if (error) throw error;
 
                     if (data && data.length > 0) {
-                        existingInspection = data[0];
+                        const inspectionId = data[0].id;
+
+                        // Obtener normas asociadas
+                        const { data: normsData, error: normsError } = await supabaseClient
+                            .from('normas_inspeccion')
+                            .select('*')
+                            .eq('inspeccion_id', inspectionId);
+
+                        if (normsError) throw normsError;
+
+                        existingInspection = {
+                            ...data[0],
+                            norms: normsData.map(n => ({
+                                title: n.titulo,
+                                status: n.estado
+                            }))
+                        };
                     }
                 } else {
                     // Buscar en datos locales
                     const busInspections = inspectionData.filter(insp => insp.ppu === ppu);
                     if (busInspections.length > 0) {
+                        // Ordenar por fecha descendente para obtener la más reciente
+                        busInspections.sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
                         existingInspection = busInspections[0];
                     }
                 }
@@ -2691,9 +2816,27 @@
                 // Si encontramos una inspección existente
                 if (existingInspection) {
                     hideLoader();
-                    showToast('info', 'Inspección Existente', 'Este bus ya ha sido inspeccionado. ¿Desea editar la inspección anterior?', true, () => {
-                        loadExistingInspection(ppu);
-                    });
+
+                    // NUEVA FUNCIÓN: Verificar si el bus está pendiente de revisión
+                    const pendingNorms = existingInspection.norms.filter(norm =>
+                        norm.status === 'Pendiente' || norm.status === 'Dañada'
+                    );
+
+                    // Si no hay normas pendientes, alertar que ya está completamente revisado
+                    if (pendingNorms.length === 0) {
+                        showToast('info', 'Bus Completamente Revisado',
+                            'Este bus ya ha sido inspeccionado y no tiene normas pendientes. ¿Desea revisarlo nuevamente?',
+                            true, () => {
+                                loadExistingInspection(ppu);
+                            });
+                    } else {
+                        // Si hay normas pendientes, alertar cuántas normas pendientes hay
+                        showToast('warning', 'Bus con Pendientes',
+                            `Este bus tiene ${pendingNorms.length} normas pendientes o dañadas. ¿Desea continuar la revisión?`,
+                            true, () => {
+                                loadExistingInspection(ppu);
+                            });
+                    }
                 } else {
                     hideLoader();
                 }
@@ -2713,24 +2856,39 @@
             const modalPrintBtn = document.getElementById('modal-print-btn');
 
             // Cerrar modal al hacer clic en el botón de cierre
-            detailModalClose.addEventListener('click', closeDetailModal);
-            modalCloseBtn.addEventListener('click', closeDetailModal);
+            if (detailModalClose) {
+                detailModalClose.addEventListener('click', closeDetailModal);
+            }
+
+            if (modalCloseBtn) {
+                modalCloseBtn.addEventListener('click', closeDetailModal);
+            }
 
             // Cerrar modal al hacer clic fuera
-            detailModalBackdrop.addEventListener('click', function(e) {
-                if (e.target === detailModalBackdrop) {
-                    closeDetailModal();
-                }
-            });
+            if (detailModalBackdrop) {
+                detailModalBackdrop.addEventListener('click', function (e) {
+                    if (e.target === detailModalBackdrop) {
+                        closeDetailModal();
+                    }
+                });
+            }
 
             // Funcionalidad del botón de edición
-            modalEditBtn.addEventListener('click', function() {
-                const ppu = document.querySelector('#modal-title').textContent.split(':')[1].trim();
-                loadExistingInspection(ppu);
-                closeDetailModal();
-                // Cambiar a la pestaña del formulario
-                document.querySelector('.tab-item[data-tab="form"]').click();
-            });
+            if (modalEditBtn) {
+                modalEditBtn.addEventListener('click', function () {
+                    const ppu = document.querySelector('#modal-title').textContent.split(':')[1].trim();
+                    loadExistingInspection(ppu);
+                    closeDetailModal();
+                    // Cambiar a la pestaña del formulario
+                    document.querySelector('.tab-item[data-tab="form"]').click();
+                });
+            }
+
+            if (modalPrintBtn) {
+                modalPrintBtn.addEventListener('click', function () {
+                    window.print();
+                });
+            }
 
             // Modal de imágenes
             const imageModalBackdrop = document.getElementById('image-modal-backdrop');
@@ -2738,15 +2896,22 @@
             const imageModalCloseBtn = document.getElementById('image-modal-close-btn');
 
             // Cerrar modal al hacer clic en el botón de cierre
-            imageModalClose.addEventListener('click', closeImageModal);
-            imageModalCloseBtn.addEventListener('click', closeImageModal);
+            if (imageModalClose) {
+                imageModalClose.addEventListener('click', closeImageModal);
+            }
+
+            if (imageModalCloseBtn) {
+                imageModalCloseBtn.addEventListener('click', closeImageModal);
+            }
 
             // Cerrar modal al hacer clic fuera
-            imageModalBackdrop.addEventListener('click', function(e) {
-                if (e.target === imageModalBackdrop) {
-                    closeImageModal();
-                }
-            });
+            if (imageModalBackdrop) {
+                imageModalBackdrop.addEventListener('click', function (e) {
+                    if (e.target === imageModalBackdrop) {
+                        closeImageModal();
+                    }
+                });
+            }
         }
 
         // Inicializar vista previa de imágenes
@@ -2757,53 +2922,93 @@
         // Inicializar filtros
         function initializeFilters() {
             // Filtros del historial
-            document.getElementById('history-search').addEventListener('input', function() {
-                currentPage.history = 1;
-                updateHistoryList();
-            });
+            const historySearch = document.getElementById('history-search');
+            if (historySearch) {
+                historySearch.addEventListener('input', function () {
+                    currentPage.history = 1;
+                    updateHistoryList();
+                });
+            }
 
-            document.getElementById('history-filter').addEventListener('change', function() {
-                currentPage.history = 1;
-                updateHistoryList();
-            });
+            const historyFilter = document.getElementById('history-filter');
+            if (historyFilter) {
+                historyFilter.addEventListener('change', function () {
+                    currentPage.history = 1;
+                    updateHistoryList();
+                });
+            }
 
             // Filtros de buses completos
-            document.getElementById('complete-search').addEventListener('input', function() {
-                currentPage.complete = 1;
-                updateCompleteList();
-            });
+            const completeSearch = document.getElementById('complete-search');
+            if (completeSearch) {
+                completeSearch.addEventListener('input', function () {
+                    currentPage.complete = 1;
+                    updateCompleteList();
+                });
+            }
 
-            document.getElementById('complete-filter').addEventListener('change', function() {
-                currentPage.complete = 1;
-                updateCompleteList();
-            });
+            const completeFilter = document.getElementById('complete-filter');
+            if (completeFilter) {
+                completeFilter.addEventListener('change', function () {
+                    currentPage.complete = 1;
+                    updateCompleteList();
+                });
+            }
 
             // Filtros de buses pendientes
-            document.getElementById('pending-search').addEventListener('input', function() {
-                currentPage.pending = 1;
-                updatePendingList();
-            });
+            const pendingSearch = document.getElementById('pending-search');
+            if (pendingSearch) {
+                pendingSearch.addEventListener('input', function () {
+                    currentPage.pending = 1;
+                    updatePendingList();
+                });
+            }
 
-            document.getElementById('pending-filter').addEventListener('change', function() {
-                currentPage.pending = 1;
-                updatePendingList();
-            });
+            const pendingFilter = document.getElementById('pending-filter');
+            if (pendingFilter) {
+                pendingFilter.addEventListener('change', function () {
+                    currentPage.pending = 1;
+                    updatePendingList();
+                });
+            }
         }
 
         // Inicializar botones de exportación
         function initializeExportButtons() {
-            document.getElementById('export-pdf').addEventListener('click', exportToPDF);
-            document.getElementById('export-excel').addEventListener('click', exportToExcel);
-            document.getElementById('send-report').addEventListener('click', sendEmailReport);
-            document.getElementById('generate-complete-report').addEventListener('click', generateCompleteReport);
-            document.getElementById('export-charts').addEventListener('click', exportCharts);
+            const exportPdfBtn = document.getElementById('export-pdf');
+            if (exportPdfBtn) {
+                exportPdfBtn.addEventListener('click', exportToPDF);
+            }
+
+            const exportExcelBtn = document.getElementById('export-excel');
+            if (exportExcelBtn) {
+                exportExcelBtn.addEventListener('click', exportToExcel);
+            }
+
+            const sendReportBtn = document.getElementById('send-report');
+            if (sendReportBtn) {
+                sendReportBtn.addEventListener('click', sendEmailReport);
+            }
+
+            const generateCompleteReportBtn = document.getElementById('generate-complete-report');
+            if (generateCompleteReportBtn) {
+                generateCompleteReportBtn.addEventListener('click', generateCompleteReport);
+            }
+
+            const exportChartsBtn = document.getElementById('export-charts');
+            if (exportChartsBtn) {
+                exportChartsBtn.addEventListener('click', exportCharts);
+            }
         }
 
         // Inicializar funcionalidad de impresión
         function initializePrintFunctionality() {
-            document.getElementById('modal-print-btn').addEventListener('click', function() {
-                window.print();
-            });
+            const modalPrintBtn = document.getElementById('modal-print-btn');
+            if (modalPrintBtn) {
+                modalPrintBtn.addEventListener('click', function () {
+                    window.print();
+                });
+            }
         }
 
         // Inicializar gráficos
@@ -2814,80 +3019,82 @@
         // Poblar normas en el formulario
         function populateNorms() {
             const normsContainer = document.getElementById('norms-container');
+            if (!normsContainer) return;
+
             normsContainer.innerHTML = '';
-            
+
             graphicsNorms.forEach((norm, index) => {
                 const normCard = document.createElement('div');
                 normCard.className = 'norm-card unanswered';
                 normCard.setAttribute('data-norm-index', index);
-                
+
                 const normHeader = document.createElement('div');
                 normHeader.className = 'norm-header';
-                
+
                 const normTitle = document.createElement('div');
                 normTitle.className = 'norm-title';
                 normTitle.textContent = norm.title;
-                
+
                 const normActions = document.createElement('div');
                 normActions.className = 'norm-actions';
-                
+
                 const infoButton = document.createElement('button');
                 infoButton.className = 'btn-icon';
                 infoButton.title = 'Ver descripción';
                 infoButton.innerHTML = '<i class="fas fa-info-circle"></i>';
-                infoButton.addEventListener('click', function() {
+                infoButton.addEventListener('click', function () {
                     showToast('info', norm.title, norm.description);
                 });
-                
+
                 const imageButton = document.createElement('button');
                 imageButton.className = 'btn-icon';
                 imageButton.title = 'Ver imagen de referencia';
                 imageButton.innerHTML = '<i class="fas fa-image"></i>';
-                imageButton.addEventListener('click', function() {
+                imageButton.addEventListener('click', function () {
                     showImagePreview(norm.title, `./assets/normas/${norm.title.toLowerCase().replace(/\s+/g, '-')}.jpg`, norm.description);
                 });
-                
+
                 normActions.appendChild(infoButton);
                 normActions.appendChild(imageButton);
-                
+
                 normHeader.appendChild(normTitle);
                 normHeader.appendChild(normActions);
-                
+
                 const statusOptions = document.createElement('div');
                 statusOptions.className = 'status-options';
-                
+
                 // Crear opciones de estado
                 statusOptions.innerHTML = `
-                    <div class="status-option" data-status="Instalada"><i class="fas fa-check"></i> Instalada</div>
-                    <div class="status-option" data-status="Pendiente"><i class="fas fa-clock"></i> Pendiente</div>
-                    <div class="status-option" data-status="Dañada"><i class="fas fa-exclamation-triangle"></i> Dañada</div>
-                    <div class="status-option" data-status="No Corresponde"><i class="fas fa-ban"></i> No Aplica</div>
-                `;
-                
+            <div class="status-option" data-status="Instalada"><i class="fas fa-check"></i> Instalada</div>
+            <div class="status-option" data-status="Pendiente"><i class="fas fa-clock"></i> Pendiente</div>
+            <div class="status-option" data-status="Dañada"><i class="fas fa-exclamation-triangle"></i> Dañada</div>
+            <div class="status-option" data-status="No Corresponde"><i class="fas fa-ban"></i> No Aplica</div>
+        `;
+
                 normCard.appendChild(normHeader);
                 normCard.appendChild(statusOptions);
-                
+
                 // Agregar evento para contraer/expandir
-                normHeader.addEventListener('click', function(e) {
+                normHeader.addEventListener('click', function (e) {
                     if (!e.target.closest('.btn-icon')) {
                         statusOptions.classList.toggle('hidden');
                     }
                 });
-                
+
                 // Agregar funcionalidad a las opciones de estado
                 statusOptions.querySelectorAll('.status-option').forEach(option => {
-                    option.addEventListener('click', function() {
+                    option.addEventListener('click', function () {
                         // Remover selección previa
                         statusOptions.querySelectorAll('.status-option').forEach(opt => opt.classList.remove('selected'));
-                        
+
                         // Marcar como seleccionada
                         this.classList.add('selected');
-                        
+
                         // Actualizar estado del norm-card
                         normCard.classList.remove('unanswered', 'installed', 'pending', 'damaged', 'not-applicable');
-                        
+
                         const status = this.getAttribute('data-status');
-                        switch(status) {
+                        switch (status) {
                             case 'Instalada':
                                 normCard.classList.add('installed');
                                 break;
@@ -2903,14 +3110,17 @@
                         }
                     });
                 });
-                
+
                 normsContainer.appendChild(normCard);
             });
         }
 
         // Limpiar contenedor de normas
         function clearNorms() {
-            document.getElementById('norms-container').innerHTML = '';
+            const normsContainer = document.getElementById('norms-container');
+            if (normsContainer) {
+                normsContainer.innerHTML = '';
+            }
         }
 
         // Mostrar vista previa de imagen
@@ -2919,25 +3129,30 @@
             const modalTitle = document.getElementById('image-modal-title');
             const previewImage = document.getElementById('preview-image');
             const imageCaption = document.getElementById('image-caption');
-            
+
+            if (!imageModal || !modalTitle || !previewImage || !imageCaption) return;
+
             modalTitle.textContent = title;
             previewImage.src = imageSrc || 'assets/placeholder.jpg';
             previewImage.alt = `Imagen de referencia: ${title}`;
             imageCaption.textContent = description || 'Imagen de referencia para la norma gráfica.';
-            
+
             // Fallback para imágenes que no existan
-            previewImage.onerror = function() {
+            previewImage.onerror = function () {
                 this.src = 'assets/placeholder.jpg';
             };
-            
+
             imageModal.style.display = 'flex';
             document.body.style.overflow = 'hidden'; // Evitar scroll
         }
 
         // Cerrar modal de imagen
         function closeImageModal() {
-            document.getElementById('image-modal-backdrop').style.display = 'none';
-            document.body.style.overflow = '';
+            const imageModal = document.getElementById('image-modal-backdrop');
+            if (imageModal) {
+                imageModal.style.display = 'none';
+                document.body.style.overflow = '';
+            }
         }
 
         // Guardar inspección
@@ -2947,7 +3162,7 @@
                     // 1. Guardar inspección principal
                     const { data: inspectionData, error: inspectionError } = await supabaseClient
                         .from('inspecciones')
-                        .insert({
+                        .insert([{
                             ppu: data.ppu,
                             terminal: data.terminal,
                             clase: data.clase,
@@ -2955,21 +3170,26 @@
                             fecha: data.fechaISO,
                             fecha_display: data.fecha,
                             observaciones: data.observaciones
-                        })
-                        .select()
-                        .single();
+                        }])
+                        .select();
 
                     if (inspectionError) throw inspectionError;
+
+                    if (!inspectionData || inspectionData.length === 0) {
+                        throw new Error('No se recibieron datos de la inspección guardada');
+                    }
+
+                    const savedInspection = inspectionData[0];
 
                     // 2. Guardar detalles de normas
                     const normPromises = data.norms.map(norm => {
                         return supabaseClient
                             .from('normas_inspeccion')
-                            .insert({
-                                inspeccion_id: inspectionData.id,
+                            .insert([{
+                                inspeccion_id: savedInspection.id,
                                 titulo: norm.title,
                                 estado: norm.status
-                            });
+                            }]);
                     });
 
                     await Promise.all(normPromises);
@@ -2985,7 +3205,7 @@
                 // Modo offline: Guardar en localStorage
                 data.id = Date.now(); // Generar ID temporal
                 data.created_at = new Date().toISOString();
-                
+
                 // Comprobar si ya existe un registro para este bus
                 const existingIndex = inspectionData.findIndex(insp => insp.ppu === data.ppu);
 
@@ -3011,9 +3231,15 @@
                         .from('inspecciones')
                         .select('id')
                         .eq('ppu', data.ppu)
-                        .single();
+                        .limit(1);
 
                     if (fetchError) throw fetchError;
+
+                    if (!existingData || existingData.length === 0) {
+                        throw new Error(`No se encontró la inspección para el PPU ${data.ppu}`);
+                    }
+
+                    const inspectionId = existingData[0].id;
 
                     // Actualizar inspección principal
                     const { error: updateError } = await supabaseClient
@@ -3026,7 +3252,7 @@
                             fecha_display: data.fecha,
                             observaciones: data.observaciones
                         })
-                        .eq('id', existingData.id);
+                        .eq('id', inspectionId);
 
                     if (updateError) throw updateError;
 
@@ -3034,7 +3260,7 @@
                     const { error: deleteError } = await supabaseClient
                         .from('normas_inspeccion')
                         .delete()
-                        .eq('inspeccion_id', existingData.id);
+                        .eq('inspeccion_id', inspectionId);
 
                     if (deleteError) throw deleteError;
 
@@ -3042,11 +3268,11 @@
                     const normPromises = data.norms.map(norm => {
                         return supabaseClient
                             .from('normas_inspeccion')
-                            .insert({
-                                inspeccion_id: existingData.id,
+                            .insert([{
+                                inspeccion_id: inspectionId,
                                 titulo: norm.title,
                                 estado: norm.status
-                            });
+                            }]);
                     });
 
                     await Promise.all(normPromises);
@@ -3068,7 +3294,7 @@
         // Cargar datos de inspección
         async function loadInspectionData() {
             showLoader('Cargando datos...');
-            
+
             try {
                 if (isConnected && supabaseClient) {
                     // 1. Obtener inspecciones
@@ -3082,26 +3308,34 @@
                     // 2. Obtener normas para cada inspección
                     const inspectionsWithNorms = await Promise.all(
                         inspections.map(async (inspection) => {
-                            const { data: norms, error: normsError } = await supabaseClient
-                                .from('normas_inspeccion')
-                                .select('*')
-                                .eq('inspeccion_id', inspection.id);
+                            try {
+                                const { data: norms, error: normsError } = await supabaseClient
+                                    .from('normas_inspeccion')
+                                    .select('*')
+                                    .eq('inspeccion_id', inspection.id);
 
-                            if (normsError) throw normsError;
+                                if (normsError) throw normsError;
 
-                            return {
-                                ...inspection,
-                                norms: norms.map(n => ({
-                                    title: n.titulo,
-                                    status: n.estado
-                                }))
-                            };
+                                return {
+                                    ...inspection,
+                                    norms: norms.map(n => ({
+                                        title: n.titulo,
+                                        status: n.estado
+                                    }))
+                                };
+                            } catch (error) {
+                                console.error(`Error al cargar normas para inspección ${inspection.id}:`, error);
+                                return {
+                                    ...inspection,
+                                    norms: []
+                                };
+                            }
                         })
                     );
 
                     // Actualizar datos en memoria
                     inspectionData = inspectionsWithNorms;
-                    
+
                     // Guardar copia en localStorage por si perdemos conexión
                     localStorage.setItem('inspections_backup', JSON.stringify(inspectionsWithNorms));
 
@@ -3112,7 +3346,7 @@
 
                 // Actualizar UI
                 updateUI();
-                
+
             } catch (error) {
                 console.error('Error al cargar datos:', error);
                 // Si falla, intentar cargar desde localStorage
@@ -3126,12 +3360,12 @@
         function loadFromLocalStorage() {
             // Primero intentar cargar desde inspections
             let storedInspections = localStorage.getItem('inspections');
-            
+
             if (!storedInspections) {
                 // Si no hay datos en inspections, intentar con el backup
                 storedInspections = localStorage.getItem('inspections_backup');
             }
-            
+
             inspectionData = storedInspections ? JSON.parse(storedInspections) : [];
         }
 
@@ -3148,8 +3382,11 @@
         function updateHistoryList() {
             const historyList = document.getElementById('history-list');
             const emptyState = document.getElementById('history-empty');
-            const searchTerm = document.getElementById('history-search').value.toLowerCase();
-            const filterValue = document.getElementById('history-filter').value;
+
+            if (!historyList || !emptyState) return;
+
+            const searchTerm = document.getElementById('history-search')?.value.toLowerCase() || '';
+            const filterValue = document.getElementById('history-filter')?.value || 'all';
 
             // Aplicar filtros
             let filteredInspections = inspectionData;
@@ -3164,7 +3401,7 @@
                 filteredInspections = filteredInspections.filter(insp => {
                     const pendingNorms = insp.norms.filter(norm => norm.status === 'Pendiente').length;
                     const damagedNorms = insp.norms.filter(norm => norm.status === 'Dañada').length;
-                    
+
                     if (filterValue === 'completed') {
                         return pendingNorms === 0 && damagedNorms === 0;
                     } else if (filterValue === 'pending') {
@@ -3189,7 +3426,7 @@
             if (currentPage.history > totalPages) {
                 currentPage.history = 1;
             }
-            
+
             const startIndex = (currentPage.history - 1) * PAGE_SIZE;
             const endIndex = startIndex + PAGE_SIZE;
             const paginatedInspections = filteredInspections.slice(startIndex, endIndex);
@@ -3201,10 +3438,10 @@
             paginatedInspections.forEach((inspection, index) => {
                 const pendingNorms = inspection.norms.filter(norm => norm.status === 'Pendiente').length;
                 const damagedNorms = inspection.norms.filter(norm => norm.status === 'Dañada').length;
-                
+
                 let status = 'Completo';
                 let statusClass = 'badge-success';
-                
+
                 if (pendingNorms > 0) {
                     status = `Pendiente (${pendingNorms})`;
                     statusClass = 'badge-warning';
@@ -3215,19 +3452,19 @@
 
                 const row = document.createElement('tr');
                 row.innerHTML = `
-                    <td>${inspection.fecha_display || new Date(inspection.fecha).toLocaleString('es-CL')}</td>
-                    <td>${inspection.ppu}</td>
-                    <td>${inspection.terminal}</td>
-                    <td><span class="badge ${statusClass}"><i class="${statusClass === 'badge-success' ? 'fas fa-check-circle' : 'fas fa-exclamation-circle'}"></i> ${status}</span></td>
-                    <td class="table-action-cell">
-                        <button class="btn-icon view-inspection" data-ppu="${inspection.ppu}" title="Ver detalles">
-                            <i class="fas fa-eye"></i>
-                        </button>
-                        <button class="btn-icon edit-inspection" data-ppu="${inspection.ppu}" title="Editar">
-                            <i class="fas fa-edit"></i>
-                        </button>
-                    </td>
-                `;
+            <td>${inspection.fecha_display || new Date(inspection.fecha).toLocaleString('es-CL')}</td>
+            <td>${inspection.ppu}</td>
+            <td>${inspection.terminal}</td>
+            <td><span class="badge ${statusClass}"><i class="${statusClass === 'badge-success' ? 'fas fa-check-circle' : 'fas fa-exclamation-circle'}"></i> ${status}</span></td>
+            <td class="table-action-cell">
+                <button class="btn-icon view-inspection" data-ppu="${inspection.ppu}" title="Ver detalles">
+                    <i class="fas fa-eye"></i>
+                </button>
+                <button class="btn-icon edit-inspection" data-ppu="${inspection.ppu}" title="Editar">
+                    <i class="fas fa-edit"></i>
+                </button>
+            </td>
+        `;
                 historyList.appendChild(row);
             });
 
@@ -3236,7 +3473,7 @@
 
             // Agregar eventos a los botones
             document.querySelectorAll('.view-inspection').forEach(btn => {
-                btn.addEventListener('click', function() {
+                btn.addEventListener('click', function () {
                     const ppu = this.getAttribute('data-ppu');
                     const inspection = inspectionData.find(insp => insp.ppu === ppu);
                     if (inspection) {
@@ -3246,7 +3483,7 @@
             });
 
             document.querySelectorAll('.edit-inspection').forEach(btn => {
-                btn.addEventListener('click', function() {
+                btn.addEventListener('click', function () {
                     const ppu = this.getAttribute('data-ppu');
                     loadExistingInspection(ppu);
                     document.querySelector('.tab-item[data-tab="form"]').click();
@@ -3258,8 +3495,11 @@
         function updateCompleteList() {
             const completeList = document.getElementById('complete-buses-list');
             const emptyState = document.getElementById('complete-empty');
-            const searchTerm = document.getElementById('complete-search').value.toLowerCase();
-            const filterValue = document.getElementById('complete-filter').value;
+
+            if (!completeList || !emptyState) return;
+
+            const searchTerm = document.getElementById('complete-search')?.value.toLowerCase() || '';
+            const filterValue = document.getElementById('complete-filter')?.value || 'all';
 
             // Obtener buses completos
             const completeBuses = getCompleteBuses();
@@ -3290,7 +3530,7 @@
             if (currentPage.complete > totalPages) {
                 currentPage.complete = 1;
             }
-            
+
             const startIndex = (currentPage.complete - 1) * PAGE_SIZE;
             const endIndex = startIndex + PAGE_SIZE;
             const paginatedBuses = filteredBuses.slice(startIndex, endIndex);
@@ -3303,28 +3543,28 @@
                 const busItem = document.createElement('li');
                 busItem.className = 'bus-item complete';
                 busItem.setAttribute('data-ppu', bus.ppu);
-                
+
                 const installedCount = bus.norms.filter(norm => norm.status === 'Instalada').length;
                 const naCount = bus.norms.filter(norm => norm.status === 'No Corresponde').length;
-                
+
                 busItem.innerHTML = `
-                    <div class="bus-info">
-                        <div class="bus-ppu">${bus.ppu}</div>
-                        <div class="bus-details">
-                            <span class="bus-detail-item"><i class="fas fa-truck"></i> ${bus.marca}</span>
-                            <span class="bus-detail-item"><i class="fas fa-tag"></i> Clase ${bus.clase}</span>
-                            <span class="bus-detail-item"><i class="fas fa-warehouse"></i> ${bus.terminal}</span>
-                        </div>
-                    </div>
-                    <div class="bus-status">
-                        <span class="badge badge-success"><i class="fas fa-check-circle"></i> Completo</span>
-                    </div>
-                `;
-                
+            <div class="bus-info">
+                <div class="bus-ppu">${bus.ppu}</div>
+                <div class="bus-details">
+                    <span class="bus-detail-item"><i class="fas fa-truck"></i> ${bus.marca}</span>
+                    <span class="bus-detail-item"><i class="fas fa-tag"></i> Clase ${bus.clase}</span>
+                    <span class="bus-detail-item"><i class="fas fa-warehouse"></i> ${bus.terminal}</span>
+                </div>
+            </div>
+            <div class="bus-status">
+                <span class="badge badge-success"><i class="fas fa-check-circle"></i> Completo</span>
+            </div>
+        `;
+
                 completeList.appendChild(busItem);
 
                 // Agregar evento de clic para mostrar detalles
-                busItem.addEventListener('click', function() {
+                busItem.addEventListener('click', function () {
                     const ppu = this.getAttribute('data-ppu');
                     const busInspection = inspectionData.find(insp => insp.ppu === ppu);
                     if (busInspection) {
@@ -3332,7 +3572,7 @@
                     }
                 });
             });
-            
+
             // Actualizar paginación
             updatePagination('complete', filteredBuses.length, currentPage.complete);
         }
@@ -3341,8 +3581,11 @@
         function updatePendingList() {
             const pendingList = document.getElementById('pending-list');
             const emptyState = document.getElementById('pending-empty');
-            const searchTerm = document.getElementById('pending-search').value.toLowerCase();
-            const filterValue = document.getElementById('pending-filter').value;
+
+            if (!pendingList || !emptyState) return;
+
+            const searchTerm = document.getElementById('pending-search')?.value.toLowerCase() || '';
+            const filterValue = document.getElementById('pending-filter')?.value || 'all';
 
             // Obtener buses pendientes
             const pendingBuses = getPendingBuses();
@@ -3380,7 +3623,7 @@
             if (currentPage.pending > totalPages) {
                 currentPage.pending = 1;
             }
-            
+
             const startIndex = (currentPage.pending - 1) * PAGE_SIZE;
             const endIndex = startIndex + PAGE_SIZE;
             const paginatedBuses = filteredBuses.slice(startIndex, endIndex);
@@ -3395,31 +3638,31 @@
 
                 const row = document.createElement('tr');
                 row.innerHTML = `
-                    <td>${item.ppu}</td>
-                    <td>${item.clase}</td>
-                    <td>${item.normTitle}</td>
-                    <td><span class="badge ${statusClass}"><i class="fas fa-${statusIcon}"></i> ${item.status}</span></td>
-                    <td class="table-action-cell">
-                        <button class="btn-icon view-bus" data-ppu="${item.ppu}" title="Ver detalles">
-                            <i class="fas fa-eye"></i>
-                        </button>
-                        <button class="btn-icon edit-bus" data-ppu="${item.ppu}" title="Editar">
-                            <i class="fas fa-edit"></i>
-                        </button>
-                    </td>
-                `;
+            <td>${item.ppu}</td>
+            <td>${item.clase}</td>
+            <td>${item.normTitle}</td>
+            <td><span class="badge ${statusClass}"><i class="fas fa-${statusIcon}"></i> ${item.status}</span></td>
+            <td class="table-action-cell">
+                <button class="btn-icon view-bus" data-ppu="${item.ppu}" title="Ver detalles">
+                    <i class="fas fa-eye"></i>
+                </button>
+                <button class="btn-icon edit-bus" data-ppu="${item.ppu}" title="Editar">
+                    <i class="fas fa-edit"></i>
+                </button>
+            </td>
+        `;
                 pendingList.appendChild(row);
             });
-            
+
             // Actualizar paginación
             updatePagination('pending', filteredBuses.length, currentPage.pending);
 
             // Agregar eventos a los botones
             document.querySelectorAll('.view-bus, .edit-bus').forEach(btn => {
-                btn.addEventListener('click', function() {
+                btn.addEventListener('click', function () {
                     const ppu = this.getAttribute('data-ppu');
                     const busInspection = inspectionData.find(insp => insp.ppu === ppu);
-                    
+
                     if (busInspection) {
                         if (this.classList.contains('view-bus')) {
                             showInspectionDetails(busInspection);
@@ -3435,92 +3678,94 @@
         // Actualizar paginación
         function updatePagination(type, totalItems, currentPageNum) {
             const paginationContainer = document.getElementById(`${type}-pagination`);
+            if (!paginationContainer) return;
+
             const totalPages = Math.ceil(totalItems / PAGE_SIZE);
-            
+
             if (totalPages <= 1) {
                 paginationContainer.innerHTML = '';
                 return;
             }
-            
+
             let paginationHTML = '';
-            
+
             // Botón anterior
             paginationHTML += `
-                <li class="page-item ${currentPageNum === 1 ? 'disabled' : ''}">
-                    <button class="page-link" data-page="${currentPageNum - 1}" ${currentPageNum === 1 ? 'disabled' : ''}>
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                </li>
-            `;
-            
+        <li class="page-item ${currentPageNum === 1 ? 'disabled' : ''}">
+            <button class="page-link" data-page="${currentPageNum - 1}" ${currentPageNum === 1 ? 'disabled' : ''}>
+                <i class="fas fa-chevron-left"></i>
+            </button>
+        </li>
+    `;
+
             // Determinar qué páginas mostrar
             let startPage = Math.max(1, currentPageNum - 2);
             let endPage = Math.min(totalPages, startPage + 4);
-            
+
             if (endPage - startPage < 4) {
                 startPage = Math.max(1, endPage - 4);
             }
-            
+
             // Primera página
             if (startPage > 1) {
                 paginationHTML += `
-                    <li class="page-item">
-                        <button class="page-link" data-page="1">1</button>
-                    </li>
-                `;
-                
+            <li class="page-item">
+                <button class="page-link" data-page="1">1</button>
+            </li>
+        `;
+
                 if (startPage > 2) {
                     paginationHTML += `
-                        <li class="page-item disabled">
-                            <span class="page-link">...</span>
-                        </li>
-                    `;
+                <li class="page-item disabled">
+                    <span class="page-link">...</span>
+                </li>
+            `;
                 }
             }
-            
+
             // Páginas numéricas
             for (let i = startPage; i <= endPage; i++) {
                 paginationHTML += `
-                    <li class="page-item ${i === currentPageNum ? 'active' : ''}">
-                        <button class="page-link" data-page="${i}">${i}</button>
-                    </li>
-                `;
+            <li class="page-item ${i === currentPageNum ? 'active' : ''}">
+                <button class="page-link" data-page="${i}">${i}</button>
+            </li>
+        `;
             }
-            
+
             // Última página
             if (endPage < totalPages) {
                 if (endPage < totalPages - 1) {
                     paginationHTML += `
-                        <li class="page-item disabled">
-                            <span class="page-link">...</span>
-                        </li>
-                    `;
-                }
-                
-                paginationHTML += `
-                    <li class="page-item">
-                        <button class="page-link" data-page="${totalPages}">${totalPages}</button>
-                    </li>
-                `;
-            }
-            
-            // Botón siguiente
-            paginationHTML += `
-                <li class="page-item ${currentPageNum === totalPages ? 'disabled' : ''}">
-                    <button class="page-link" data-page="${currentPageNum + 1}" ${currentPageNum === totalPages ? 'disabled' : ''}>
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
+                <li class="page-item disabled">
+                    <span class="page-link">...</span>
                 </li>
             `;
-            
+                }
+
+                paginationHTML += `
+            <li class="page-item">
+                <button class="page-link" data-page="${totalPages}">${totalPages}</button>
+            </li>
+        `;
+            }
+
+            // Botón siguiente
+            paginationHTML += `
+        <li class="page-item ${currentPageNum === totalPages ? 'disabled' : ''}">
+            <button class="page-link" data-page="${currentPageNum + 1}" ${currentPageNum === totalPages ? 'disabled' : ''}>
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </li>
+    `;
+
             paginationContainer.innerHTML = paginationHTML;
-            
+
             // Agregar eventos a los botones de paginación
             paginationContainer.querySelectorAll('.page-link:not([disabled])').forEach(btn => {
-                btn.addEventListener('click', function() {
+                btn.addEventListener('click', function () {
                     const pageNum = parseInt(this.getAttribute('data-page'));
                     currentPage[type] = pageNum;
-                    
+
                     // Actualizar la lista correspondiente
                     if (type === 'history') {
                         updateHistoryList();
@@ -3538,28 +3783,28 @@
             // Considerar cada bus solo una vez (la inspección más reciente)
             const processedBuses = new Set();
             const completeBuses = [];
-            
+
             // Ordenar por fecha descendente para tener las inspecciones más recientes primero
-            const sortedInspections = [...inspectionData].sort((a, b) => 
+            const sortedInspections = [...inspectionData].sort((a, b) =>
                 new Date(b.fecha) - new Date(a.fecha)
             );
-            
+
             sortedInspections.forEach(inspection => {
                 // Si ya procesamos este bus, saltarlo
                 if (processedBuses.has(inspection.ppu)) return;
-                
-                const pendingNorms = inspection.norms.filter(norm => 
+
+                const pendingNorms = inspection.norms.filter(norm =>
                     norm.status === 'Pendiente' || norm.status === 'Dañada'
                 );
-                
+
                 if (pendingNorms.length === 0) {
                     completeBuses.push(inspection);
                 }
-                
+
                 // Marcar como procesado
                 processedBuses.add(inspection.ppu);
             });
-            
+
             return completeBuses;
         }
 
@@ -3567,24 +3812,24 @@
         function getPendingBuses() {
             const pendingItems = [];
             const processedBuses = new Set();
-            
+
             // Ordenar por fecha descendente
-            const sortedInspections = [...inspectionData].sort((a, b) => 
+            const sortedInspections = [...inspectionData].sort((a, b) =>
                 new Date(b.fecha) - new Date(a.fecha)
             );
-            
+
             sortedInspections.forEach(inspection => {
                 // Si ya procesamos este bus, saltarlo
                 if (processedBuses.has(inspection.ppu)) return;
-                
-                const pendingNorms = inspection.norms.filter(norm => 
+
+                const pendingNorms = inspection.norms.filter(norm =>
                     norm.status === 'Pendiente'
                 );
-                
-                const damagedNorms = inspection.norms.filter(norm => 
+
+                const damagedNorms = inspection.norms.filter(norm =>
                     norm.status === 'Dañada'
                 );
-                
+
                 if (pendingNorms.length > 0 || damagedNorms.length > 0) {
                     // Agregar elementos pendientes
                     pendingNorms.forEach(norm => {
@@ -3597,7 +3842,7 @@
                             status: norm.status
                         });
                     });
-                    
+
                     // Agregar elementos dañados
                     damagedNorms.forEach(norm => {
                         pendingItems.push({
@@ -3609,12 +3854,12 @@
                             status: norm.status
                         });
                     });
-                    
+
                     // Marcar como procesado
                     processedBuses.add(inspection.ppu);
                 }
             });
-            
+
             return pendingItems;
         }
 
@@ -3624,167 +3869,177 @@
             const pendingBuses = new Set(getPendingBuses()
                 .filter(item => item.status === 'Pendiente')
                 .map(item => item.ppu)).size;
-                
+
             const damagedBuses = new Set(getPendingBuses()
                 .filter(item => item.status === 'Dañada')
                 .map(item => item.ppu)).size;
-                
+
             const totalInspections = new Set(inspectionData.map(item => item.ppu)).size;
 
             // Actualizar contadores en UI
-            document.getElementById('completed-count').textContent = completeBuses;
-            document.getElementById('pending-count').textContent = pendingBuses;
-            document.getElementById('damaged-count').textContent = damagedBuses;
-            document.getElementById('total-count').textContent = totalInspections;
+            const completedCountElement = document.getElementById('completed-count');
+            if (completedCountElement) completedCountElement.textContent = completeBuses;
+
+            const pendingCountElement = document.getElementById('pending-count');
+            if (pendingCountElement) pendingCountElement.textContent = pendingBuses;
+
+            const damagedCountElement = document.getElementById('damaged-count');
+            if (damagedCountElement) damagedCountElement.textContent = damagedBuses;
+
+            const totalCountElement = document.getElementById('total-count');
+            if (totalCountElement) totalCountElement.textContent = totalInspections;
         }
 
         // Mostrar detalles de inspección en modal
         function showInspectionDetails(inspection) {
             const modalTitle = document.getElementById('modal-title');
             const modalBody = document.getElementById('modal-body');
-            
+            const modalBackdrop = document.getElementById('detail-modal-backdrop');
+
+            if (!modalTitle || !modalBody || !modalBackdrop) return;
+
             modalTitle.innerHTML = `<i class="fas fa-bus"></i> Bus: ${inspection.ppu}`;
-            
+
             // Crear el contenido del modal
             let content = `
-            <div class="bus-summary print-include">
-                <div class="summary-header">
-                    <h3 class="summary-title"><i class="fas fa-info-circle"></i> Información General</h3>
-                    <div class="summary-date">Última inspección: ${inspection.fecha_display || new Date(inspection.fecha).toLocaleString('es-CL')}</div>
-                </div>
-                
-                <div class="summary-info">
-                    <div class="summary-item">
-                        <div class="summary-label">Terminal</div>
-                        <div class="summary-value">${inspection.terminal}</div>
-                    </div>
-                    <div class="summary-item">
-                        <div class="summary-label">Clase</div>
-                        <div class="summary-value">${inspection.clase}</div>
-                    </div>
-                    <div class="summary-item">
-                        <div class="summary-label">Marca</div>
-                        <div class="summary-value">${inspection.marca}</div>
-                    </div>
-                    <div class="summary-item">
-                        <div class="summary-label">Observaciones</div>
-                        <div class="summary-value">${inspection.observaciones || 'Sin observaciones'}</div>
-                    </div>
-                </div>
-            `;
-            
+    <div class="bus-summary print-include">
+        <div class="summary-header">
+            <h3 class="summary-title"><i class="fas fa-info-circle"></i> Información General</h3>
+            <div class="summary-date">Última inspección: ${inspection.fecha_display || new Date(inspection.fecha).toLocaleString('es-CL')}</div>
+        </div>
+        
+        <div class="summary-info">
+            <div class="summary-item">
+                <div class="summary-label">Terminal</div>
+                <div class="summary-value">${inspection.terminal}</div>
+            </div>
+            <div class="summary-item">
+                <div class="summary-label">Clase</div>
+                <div class="summary-value">${inspection.clase}</div>
+            </div>
+            <div class="summary-item">
+                <div class="summary-label">Marca</div>
+                <div class="summary-value">${inspection.marca}</div>
+            </div>
+            <div class="summary-item">
+                <div class="summary-label">Observaciones</div>
+                <div class="summary-value">${inspection.observaciones || 'Sin observaciones'}</div>
+            </div>
+        </div>
+    `;
+
             // Estadísticas de normas
             const installedNorms = inspection.norms.filter(norm => norm.status === 'Instalada');
             const pendingNorms = inspection.norms.filter(norm => norm.status === 'Pendiente');
             const damagedNorms = inspection.norms.filter(norm => norm.status === 'Dañada');
             const notApplicableNorms = inspection.norms.filter(norm => norm.status === 'No Corresponde');
-            
+
             content += `
-                <div class="status-chart">
-                    <div class="status-stats">
-                        <div class="status-stat-item installed-stat">
-                            <div class="status-stat-value">${installedNorms.length}</div>
-                            <div class="status-stat-label">Instaladas</div>
-                        </div>
-                        <div class="status-stat-item pending-stat">
-                            <div class="status-stat-value">${pendingNorms.length}</div>
-                            <div class="status-stat-label">Pendientes</div>
-                        </div>
-                        <div class="status-stat-item damaged-stat">
-                            <div class="status-stat-value">${damagedNorms.length}</div>
-                            <div class="status-stat-label">Dañadas</div>
-                        </div>
-                        <div class="status-stat-item not-applicable-stat">
-                            <div class="status-stat-value">${notApplicableNorms.length}</div>
-                            <div class="status-stat-label">No Aplica</div>
-                        </div>
-                    </div>
-                    <canvas id="modal-chart" width="400" height="200"></canvas>
+        <div class="status-chart">
+            <div class="status-stats">
+                <div class="status-stat-item installed-stat">
+                    <div class="status-stat-value">${installedNorms.length}</div>
+                    <div class="status-stat-label">Instaladas</div>
                 </div>
-            `;
-            
-            // Lista de normas agrupadas por estado
-            content += `
-                <div class="section-header">
-                    <h3 class="section-title"><i class="fas fa-clipboard-check"></i> Estado de Normas Gráficas</h3>
+                <div class="status-stat-item pending-stat">
+                    <div class="status-stat-value">${pendingNorms.length}</div>
+                    <div class="status-stat-label">Pendientes</div>
                 </div>
-                
-                <div class="card" style="margin-top: 1rem;">
-                    <div class="card-header">
-                        <h4 class="card-title"><i class="fas fa-check"></i> Normas Instaladas (${installedNorms.length})</h4>
-                    </div>
-                    <div class="card-body">
-                        <ul class="norms-status-list">
-                            ${installedNorms.map(norm => `
-                                <li class="norm-status-item">
-                                    <span class="norm-status-name">${norm.title}</span>
-                                    <span class="badge badge-success"><i class="fas fa-check"></i> Instalada</span>
-                                </li>
-                            `).join('')}
-                            ${installedNorms.length === 0 ? '<li class="norm-status-item">No hay normas instaladas</li>' : ''}
-                        </ul>
-                    </div>
+                <div class="status-stat-item damaged-stat">
+                    <div class="status-stat-value">${damagedNorms.length}</div>
+                    <div class="status-stat-label">Dañadas</div>
                 </div>
-                
-                <div class="card">
-                    <div class="card-header">
-                        <h4 class="card-title"><i class="fas fa-clock"></i> Normas Pendientes (${pendingNorms.length})</h4>
-                    </div>
-                    <div class="card-body">
-                        <ul class="norms-status-list">
-                            ${pendingNorms.map(norm => `
-                                <li class="norm-status-item">
-                                    <span class="norm-status-name">${norm.title}</span>
-                                    <span class="badge badge-warning"><i class="fas fa-clock"></i> Pendiente</span>
-                                </li>
-                            `).join('')}
-                            ${pendingNorms.length === 0 ? '<li class="norm-status-item">No hay normas pendientes</li>' : ''}
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-header">
-                        <h4 class="card-title"><i class="fas fa-exclamation-triangle"></i> Normas Dañadas (${damagedNorms.length})</h4>
-                    </div>
-                    <div class="card-body">
-                        <ul class="norms-status-list">
-                            ${damagedNorms.map(norm => `
-                                <li class="norm-status-item">
-                                    <span class="norm-status-name">${norm.title}</span>
-                                    <span class="badge badge-danger"><i class="fas fa-exclamation-triangle"></i> Dañada</span>
-                                </li>
-                            `).join('')}
-                            ${damagedNorms.length === 0 ? '<li class="norm-status-item">No hay normas dañadas</li>' : ''}
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-header">
-                        <h4 class="card-title"><i class="fas fa-ban"></i> Normas No Aplicables (${notApplicableNorms.length})</h4>
-                    </div>
-                    <div class="card-body">
-                        <ul class="norms-status-list">
-                            ${notApplicableNorms.map(norm => `
-                                <li class="norm-status-item">
-                                    <span class="norm-status-name">${norm.title}</span>
-                                    <span class="badge badge-secondary"><i class="fas fa-ban"></i> No Aplica</span>
-                                </li>
-                            `).join('')}
-                            ${notApplicableNorms.length === 0 ? '<li class="norm-status-item">No hay normas no aplicables</li>' : ''}
-                        </ul>
-                    </div>
+                <div class="status-stat-item not-applicable-stat">
+                    <div class="status-stat-value">${notApplicableNorms.length}</div>
+                    <div class="status-stat-label">No Aplica</div>
                 </div>
             </div>
-            `;
-            
+            <canvas id="modal-chart" width="400" height="200"></canvas>
+        </div>
+    `;
+
+            // Lista de normas agrupadas por estado
+            content += `
+        <div class="section-header">
+            <h3 class="section-title"><i class="fas fa-clipboard-check"></i> Estado de Normas Gráficas</h3>
+        </div>
+        
+        <div class="card" style="margin-top: 1rem;">
+            <div class="card-header">
+                <h4 class="card-title"><i class="fas fa-check"></i> Normas Instaladas (${installedNorms.length})</h4>
+            </div>
+            <div class="card-body">
+                <ul class="norms-status-list">
+                    ${installedNorms.map(norm => `
+                        <li class="norm-status-item">
+                            <span class="norm-status-name">${norm.title}</span>
+                            <span class="badge badge-success"><i class="fas fa-check"></i> Instalada</span>
+                        </li>
+                    `).join('')}
+                    ${installedNorms.length === 0 ? '<li class="norm-status-item">No hay normas instaladas</li>' : ''}
+                </ul>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title"><i class="fas fa-clock"></i> Normas Pendientes (${pendingNorms.length})</h4>
+            </div>
+            <div class="card-body">
+                <ul class="norms-status-list">
+                    ${pendingNorms.map(norm => `
+                        <li class="norm-status-item">
+                            <span class="norm-status-name">${norm.title}</span>
+                            <span class="badge badge-warning"><i class="fas fa-clock"></i> Pendiente</span>
+                        </li>
+                    `).join('')}
+                    ${pendingNorms.length === 0 ? '<li class="norm-status-item">No hay normas pendientes</li>' : ''}
+                </ul>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title"><i class="fas fa-exclamation-triangle"></i> Normas Dañadas (${damagedNorms.length})</h4>
+            </div>
+            <div class="card-body">
+                <ul class="norms-status-list">
+                    ${damagedNorms.map(norm => `
+                        <li class="norm-status-item">
+                            <span class="norm-status-name">${norm.title}</span>
+                            <span class="badge badge-danger"><i class="fas fa-exclamation-triangle"></i> Dañada</span>
+                        </li>
+                    `).join('')}
+                    ${damagedNorms.length === 0 ? '<li class="norm-status-item">No hay normas dañadas</li>' : ''}
+                </ul>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title"><i class="fas fa-ban"></i> Normas No Aplicables (${notApplicableNorms.length})</h4>
+            </div>
+            <div class="card-body">
+                <ul class="norms-status-list">
+                    ${notApplicableNorms.map(norm => `
+                        <li class="norm-status-item">
+                            <span class="norm-status-name">${norm.title}</span>
+                            <span class="badge badge-secondary"><i class="fas fa-ban"></i> No Aplica</span>
+                        </li>
+                    `).join('')}
+                    ${notApplicableNorms.length === 0 ? '<li class="norm-status-item">No hay normas no aplicables</li>' : ''}
+                </ul>
+            </div>
+        </div>
+    </div>
+    `;
+
             modalBody.innerHTML = content;
-            
+
             // Mostrar el modal
-            document.getElementById('detail-modal-backdrop').style.display = 'flex';
+            modalBackdrop.style.display = 'flex';
             document.body.style.overflow = 'hidden'; // Prevenir scroll
-            
+
             // Renderizar gráfico
             renderModalChart({
                 installed: installedNorms.length,
@@ -3796,15 +4051,18 @@
 
         // Renderizar gráfico en el modal
         function renderModalChart(data) {
+            const canvas = document.getElementById('modal-chart');
+            if (!canvas) return;
+
+            const ctx = canvas.getContext('2d');
+
             const isDarkMode = document.body.getAttribute('data-theme') === 'dark';
             const textColor = isDarkMode ? '#e2e8f0' : '#1e293b';
-            
-            const ctx = document.getElementById('modal-chart').getContext('2d');
-            
+
             if (window.modalChart) {
                 window.modalChart.destroy();
             }
-            
+
             window.modalChart = new Chart(ctx, {
                 type: 'doughnut',
                 data: {
@@ -3856,9 +4114,12 @@
 
         // Cerrar modal de detalles
         function closeDetailModal() {
-            document.getElementById('detail-modal-backdrop').style.display = 'none';
-            document.body.style.overflow = ''; // Restaurar scroll
-            
+            const modalBackdrop = document.getElementById('detail-modal-backdrop');
+            if (modalBackdrop) {
+                modalBackdrop.style.display = 'none';
+                document.body.style.overflow = ''; // Restaurar scroll
+            }
+
             // Destruir gráfico
             if (window.modalChart) {
                 window.modalChart.destroy();
@@ -3870,41 +4131,41 @@
         function loadExistingInspection(ppu) {
             // Encontrar la inspección más reciente para este bus
             const inspections = inspectionData.filter(insp => insp.ppu === ppu);
-            
+
             if (inspections.length === 0) return;
-            
+
             // Ordenar por fecha descendente
             inspections.sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
-            
+
             const inspection = inspections[0];
-            
+
             // Establecer modo edición
             isEditMode = true;
             editInspectionIndex = inspectionData.indexOf(inspection);
-            
+
             // Llenar campos del formulario
             document.getElementById('ppu').value = inspection.ppu;
             document.getElementById('terminal').value = inspection.terminal;
             document.getElementById('clase').value = inspection.clase;
             document.getElementById('marca').value = inspection.marca;
             document.getElementById('observaciones').value = inspection.observaciones || '';
-            
+
             // Asegurar que tenemos los datos del bus
             currentBusData = fleetData.find(bus => bus.ppu === inspection.ppu) || {
                 ppu: inspection.ppu,
                 clase: inspection.clase,
                 marca: inspection.marca
             };
-            
+
             // Poblar normas
             populateNorms();
-            
+
             // Seleccionar las opciones previamente guardadas
             setTimeout(() => {
                 document.querySelectorAll('.norm-card').forEach(normCard => {
                     const normTitle = normCard.querySelector('.norm-title').textContent;
                     const norm = inspection.norms.find(n => n.title === normTitle);
-                    
+
                     if (norm) {
                         const statusOption = normCard.querySelector(`.status-option[data-status="${norm.status}"]`);
                         if (statusOption) {
@@ -3913,7 +4174,7 @@
                     }
                 });
             }, 100);
-            
+
             // Mostrar un mensaje de modo edición
             showToast('info', 'Modo Edición', `Editando inspección de ${ppu}. Complete el formulario y guarde los cambios.`);
         }
@@ -3922,77 +4183,84 @@
         function showLoader(message = 'Procesando...') {
             const loader = document.getElementById('loader');
             const loaderText = document.querySelector('.loader-text');
-            
+
+            if (!loader) return;
+
             if (loaderText) {
                 loaderText.textContent = message;
             }
-            
+
             loader.style.display = 'flex';
             document.body.style.overflow = 'hidden'; // Prevenir scroll
         }
 
         // Ocultar loader
         function hideLoader() {
-            document.getElementById('loader').style.display = 'none';
-            document.body.style.overflow = ''; // Restaurar scroll
+            const loader = document.getElementById('loader');
+            if (loader) {
+                loader.style.display = 'none';
+                document.body.style.overflow = ''; // Restaurar scroll
+            }
         }
 
         // Mostrar toast
         function showToast(type, title, message, autoHide = true, callback = null) {
             const toastContainer = document.getElementById('toast-container');
+            if (!toastContainer) return;
+
             const toastId = 'toast-' + Date.now();
-            
+
             // Crear elemento toast
             const toast = document.createElement('div');
             toast.className = `toast ${type}`;
             toast.id = toastId;
-            
+
             // Icono según tipo
             let iconClass = 'fa-info-circle';
             if (type === 'success') iconClass = 'fa-check-circle';
             else if (type === 'error') iconClass = 'fa-times-circle';
             else if (type === 'warning') iconClass = 'fa-exclamation-triangle';
-            
+
             toast.innerHTML = `
-                <div class="toast-icon">
-                    <i class="fas ${iconClass}"></i>
-                </div>
-                <div class="toast-content">
-                    <div class="toast-title">${title}</div>
-                    <div class="toast-message">${message}</div>
-                </div>
-                <div class="toast-actions">
-                    <button class="toast-close" aria-label="Cerrar">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
-            `;
-            
+        <div class="toast-icon">
+            <i class="fas ${iconClass}"></i>
+        </div>
+        <div class="toast-content">
+            <div class="toast-title">${title}</div>
+            <div class="toast-message">${message}</div>
+        </div>
+        <div class="toast-actions">
+            <button class="toast-close" aria-label="Cerrar">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    `;
+
             toastContainer.appendChild(toast);
-            
+
             // Mostrar el toast (con delay para la animación)
             setTimeout(() => {
                 toast.classList.add('show');
             }, 10);
-            
+
             // Agregar evento de click
             if (callback) {
-                toast.addEventListener('click', function(e) {
+                toast.addEventListener('click', function (e) {
                     if (!e.target.closest('.toast-close')) {
                         callback();
                         closeToast(toastId);
                     }
                 });
-                
+
                 // Cambiar cursor para indicar que es clickeable
                 toast.style.cursor = 'pointer';
             }
-            
+
             // Agregar evento para cerrar
-            toast.querySelector('.toast-close').addEventListener('click', function() {
+            toast.querySelector('.toast-close').addEventListener('click', function () {
                 closeToast(toastId);
             });
-            
+
             // Auto ocultar después de 5 segundos
             if (autoHide) {
                 setTimeout(() => {
@@ -4005,9 +4273,9 @@
         function closeToast(toastId) {
             const toast = document.getElementById(toastId);
             if (!toast) return;
-            
+
             toast.classList.remove('show');
-            
+
             setTimeout(() => {
                 toast.remove();
             }, 500);
@@ -4016,43 +4284,43 @@
         // Exportar a PDF
         function exportToPDF() {
             const pendingBuses = getPendingBuses();
-            
+
             if (pendingBuses.length === 0) {
                 showToast('warning', 'Sin Datos', 'No hay buses pendientes para exportar');
                 return;
             }
-            
+
             showLoader('Generando PDF...');
-            
+
             setTimeout(() => {
                 try {
                     // Crear PDF
                     const { jsPDF } = window.jspdf;
                     const doc = new jsPDF('landscape');
-                    
+
                     // Configurar título
                     doc.setFontSize(18);
                     doc.setTextColor(0, 102, 255);
                     doc.setFont(undefined, 'bold');
                     doc.text('Reporte de Buses Pendientes', 150, 15, { align: 'center' });
-                    
+
                     // Agregar fecha
                     doc.setFontSize(11);
                     doc.setTextColor(100, 100, 100);
                     doc.setFont(undefined, 'normal');
                     doc.text(`Fecha de Generación: ${new Date().toLocaleDateString('es-CL')} ${new Date().toLocaleTimeString('es-CL')}`, 150, 22, { align: 'center' });
-                    
+
                     // Agregar estadísticas
                     const uniqueBuses = new Set(pendingBuses.map(b => b.ppu)).size;
                     const pendingCount = pendingBuses.filter(b => b.status === 'Pendiente').length;
                     const damagedCount = pendingBuses.filter(b => b.status === 'Dañada').length;
-                    
+
                     doc.setFontSize(10);
                     doc.setTextColor(40, 40, 40);
                     doc.text(`Total de Buses Pendientes: ${uniqueBuses}`, 20, 30);
                     doc.text(`Normas Pendientes: ${pendingCount}`, 20, 36);
                     doc.text(`Normas Dañadas: ${damagedCount}`, 20, 42);
-                    
+
                     // Preparar datos de la tabla
                     const tableHeaders = [['PPU', 'Clase', 'Marca', 'Terminal', 'Norma Pendiente', 'Estado']];
                     const tableData = pendingBuses.map(item => [
@@ -4063,13 +4331,13 @@
                         item.normTitle,
                         item.status
                     ]);
-                    
+
                     // Generar tabla
                     doc.autoTable({
                         head: tableHeaders,
                         body: tableData,
                         startY: 50,
-                        headStyles: { 
+                        headStyles: {
                             fillColor: [0, 102, 255],
                             textColor: 255,
                             fontStyle: 'bold'
@@ -4087,7 +4355,7 @@
                         },
                         margin: { top: 50 }
                     });
-                    
+
                     // Agregar pie de página
                     const pageCount = doc.internal.getNumberOfPages();
                     for (let i = 1; i <= pageCount; i++) {
@@ -4096,10 +4364,10 @@
                         doc.setTextColor(150, 150, 150);
                         doc.text(`Sistema de Inspección - Red Movilidad | Página ${i} de ${pageCount}`, 150, doc.internal.pageSize.height - 10, { align: 'center' });
                     }
-                    
+
                     // Guardar PDF
                     doc.save(`buses-pendientes_${new Date().toISOString().split('T')[0]}.pdf`);
-                    
+
                     showToast('success', 'PDF Generado', 'El archivo PDF se ha descargado correctamente');
                 } catch (error) {
                     console.error('Error al generar PDF:', error);
@@ -4113,25 +4381,25 @@
         // Exportar a Excel
         function exportToExcel() {
             const pendingBuses = getPendingBuses();
-            
+
             if (pendingBuses.length === 0) {
                 showToast('warning', 'Sin Datos', 'No hay buses pendientes para exportar');
                 return;
             }
-            
+
             showLoader('Generando Excel...');
-            
+
             setTimeout(() => {
                 try {
                     // Preparar datos
                     const data = [
                         ['PPU', 'Clase', 'Marca', 'Terminal', 'Norma Pendiente', 'Estado', 'Fecha Inspección']
                     ];
-                    
+
                     pendingBuses.forEach(item => {
                         const inspection = inspectionData.find(insp => insp.ppu === item.ppu);
                         const fecha = inspection ? (inspection.fecha_display || new Date(inspection.fecha).toLocaleString('es-CL')) : '';
-                        
+
                         data.push([
                             item.ppu,
                             item.clase,
@@ -4142,7 +4410,7 @@
                             fecha
                         ]);
                     });
-                    
+
                     // Crear hoja resumen
                     const uniqueBuses = Array.from(new Set(pendingBuses.map(item => item.ppu)));
                     const summaryData = [
@@ -4156,25 +4424,25 @@
                         ['Clase C', pendingBuses.filter(item => item.clase === 'C').length],
                         [''],
                         ['Buses Pendientes por Marca'],
-                        ['Scania', uniqueBuses.filter(ppu => 
+                        ['Scania', uniqueBuses.filter(ppu =>
                             pendingBuses.find(item => item.ppu === ppu && item.marca === 'Scania')
                         ).length],
-                        ['Volvo', uniqueBuses.filter(ppu => 
+                        ['Volvo', uniqueBuses.filter(ppu =>
                             pendingBuses.find(item => item.ppu === ppu && item.marca === 'Volvo')
                         ).length]
                     ];
-                    
+
                     // Crear libro de trabajo
                     const wb = XLSX.utils.book_new();
-                    
+
                     // Agregar hoja de datos
                     const wsData = XLSX.utils.aoa_to_sheet(data);
                     XLSX.utils.book_append_sheet(wb, wsData, 'Detalle');
-                    
+
                     // Agregar hoja de resumen
                     const wsSummary = XLSX.utils.aoa_to_sheet(summaryData);
                     XLSX.utils.book_append_sheet(wb, wsSummary, 'Resumen');
-                    
+
                     // Establecer anchos de columna para la hoja de datos
                     wsData['!cols'] = [
                         { wch: 10 },  // PPU
@@ -4185,10 +4453,10 @@
                         { wch: 15 },  // Estado
                         { wch: 20 }   // Fecha
                     ];
-                    
+
                     // Guardar archivo
                     XLSX.writeFile(wb, `buses-pendientes_${new Date().toISOString().split('T')[0]}.xlsx`);
-                    
+
                     showToast('success', 'Excel Generado', 'El archivo Excel se ha descargado correctamente');
                 } catch (error) {
                     console.error('Error al generar Excel:', error);
@@ -4202,7 +4470,7 @@
         // Enviar informe por email (simulado)
         function sendEmailReport() {
             showLoader('Preparando informe...');
-            
+
             setTimeout(() => {
                 showToast('success', 'Informe Enviado', 'El informe ha sido enviado por correo electrónico correctamente.');
                 hideLoader();
@@ -4212,7 +4480,7 @@
         // Generar informe completo (simulado)
         function generateCompleteReport() {
             showLoader('Generando informe completo...');
-            
+
             setTimeout(() => {
                 showToast('success', 'Informe Generado', 'El informe completo ha sido generado y descargado correctamente.');
                 hideLoader();
@@ -4222,7 +4490,7 @@
         // Exportar gráficos (simulado)
         function exportCharts() {
             showLoader('Exportando gráficos...');
-            
+
             setTimeout(() => {
                 showToast('success', 'Gráficos Exportados', 'Los gráficos han sido exportados correctamente.');
                 hideLoader();
@@ -4233,9 +4501,9 @@
         function updateChartsTheme() {
             // Actualizar gráficos si existen
             updateAllCharts();
-            
+
             // Actualizar gráfico del modal si está visible
-            if (document.getElementById('detail-modal-backdrop').style.display === 'flex' && window.modalChart) {
+            if (document.getElementById('detail-modal-backdrop')?.style.display === 'flex' && window.modalChart) {
                 const chartData = window.modalChart.data.datasets[0].data;
                 renderModalChart({
                     installed: chartData[0],
@@ -4249,14 +4517,14 @@
         // Inicializar y actualizar todos los gráficos
         function updateAllCharts() {
             if (!document.getElementById('fleet-status-chart')) return;
-            
+
             const isDarkMode = document.body.getAttribute('data-theme') === 'dark';
             const textColor = isDarkMode ? '#e2e8f0' : '#1e293b';
-            
+
             // Fuente común para todos los gráficos
             Chart.defaults.font.family = "'Inter', sans-serif";
             Chart.defaults.color = textColor;
-            
+
             // Estilo común para todos los gráficos
             const commonOptions = {
                 responsive: true,
@@ -4287,16 +4555,16 @@
                     }
                 }
             };
-            
+
             // 1. Gráfico de Estado General de la Flota
             const completeBuses = getCompleteBuses().length;
             const pendingBusesUnique = new Set(getPendingBuses().filter(item => item.status === 'Pendiente').map(item => item.ppu)).size;
             const damagedBusesUnique = new Set(getPendingBuses().filter(item => item.status === 'Dañada').map(item => item.ppu)).size;
-            
+
             if (window.fleetStatusChart) {
                 window.fleetStatusChart.destroy();
             }
-            
+
             window.fleetStatusChart = new Chart(
                 document.getElementById('fleet-status-chart').getContext('2d'),
                 {
@@ -4315,7 +4583,7 @@
                     }
                 }
             );
-            
+
             // 2. Top 5 Normas Pendientes
             const normCounts = {};
             getPendingBuses().forEach(item => {
@@ -4324,15 +4592,15 @@
                 }
                 normCounts[item.normTitle]++;
             });
-            
+
             const sortedNorms = Object.entries(normCounts)
                 .sort((a, b) => b[1] - a[1])
                 .slice(0, 5);
-            
+
             if (window.pendingNormsChart) {
                 window.pendingNormsChart.destroy();
             }
-            
+
             window.pendingNormsChart = new Chart(
                 document.getElementById('pending-norms-chart').getContext('2d'),
                 {
@@ -4371,10 +4639,10 @@
                     }
                 }
             );
-            
+
             // 3. Progreso por Terminal
             const terminalStats = {};
-            
+
             // Inicializar con todos los terminales
             const terminals = ['EL ROBLE', 'LA REINA', 'MARIA ANGELICA', 'EL DESCANSO'];
             terminals.forEach(terminal => {
@@ -4384,18 +4652,18 @@
                     damaged: 0
                 };
             });
-            
+
             // Contar buses completos por terminal
             getCompleteBuses().forEach(bus => {
                 if (terminalStats[bus.terminal]) {
                     terminalStats[bus.terminal].complete++;
                 }
             });
-            
+
             // Contar buses pendientes y dañados por terminal
             const pendingByTerminal = new Map();
             const damagedByTerminal = new Map();
-            
+
             getPendingBuses().forEach(item => {
                 if (item.status === 'Pendiente') {
                     pendingByTerminal.set(item.terminal, (pendingByTerminal.get(item.terminal) || new Set()).add(item.ppu));
@@ -4403,16 +4671,16 @@
                     damagedByTerminal.set(item.terminal, (damagedByTerminal.get(item.terminal) || new Set()).add(item.ppu));
                 }
             });
-            
+
             terminals.forEach(terminal => {
                 terminalStats[terminal].pending = pendingByTerminal.has(terminal) ? pendingByTerminal.get(terminal).size : 0;
                 terminalStats[terminal].damaged = damagedByTerminal.has(terminal) ? damagedByTerminal.get(terminal).size : 0;
             });
-            
+
             if (window.terminalProgressChart) {
                 window.terminalProgressChart.destroy();
             }
-            
+
             window.terminalProgressChart = new Chart(
                 document.getElementById('terminal-progress-chart').getContext('2d'),
                 {
@@ -4469,24 +4737,24 @@
                     }
                 }
             );
-            
+
             // 4. Comparativa por Clase de Bus
             const classStats = {
                 'B': { complete: 0, pending: 0, damaged: 0 },
                 'C': { complete: 0, pending: 0, damaged: 0 }
             };
-            
+
             // Contar buses completos por clase
             getCompleteBuses().forEach(bus => {
                 if (classStats[bus.clase]) {
                     classStats[bus.clase].complete++;
                 }
             });
-            
+
             // Contar buses pendientes y dañados por clase
             const pendingByClass = new Map();
             const damagedByClass = new Map();
-            
+
             getPendingBuses().forEach(item => {
                 if (item.status === 'Pendiente') {
                     pendingByClass.set(item.clase, (pendingByClass.get(item.clase) || new Set()).add(item.ppu));
@@ -4494,16 +4762,16 @@
                     damagedByClass.set(item.clase, (damagedByClass.get(item.clase) || new Set()).add(item.ppu));
                 }
             });
-            
+
             Object.keys(classStats).forEach(clase => {
                 classStats[clase].pending = pendingByClass.has(clase) ? pendingByClass.get(clase).size : 0;
                 classStats[clase].damaged = damagedByClass.has(clase) ? damagedByClass.get(clase).size : 0;
             });
-            
+
             if (window.classComparisonChart) {
                 window.classComparisonChart.destroy();
             }
-            
+
             window.classComparisonChart = new Chart(
                 document.getElementById('class-comparison-chart').getContext('2d'),
                 {
@@ -4784,22 +5052,20 @@
             { ppu: "SKPL36", marca: "Volvo", clase: "B" }
         ];
 
-        // Datos de normas gráficas actualizadas (con un título más corto y preciso)
+        // Datos de normas gráficas actualizadas
         const graphicsNorms = [
             { title: "CALL CENTER", description: "Información del call center para atención al cliente." },
-            { title: "CERO EMISION", description: "Indicador que identifica buses con cero emisiones contaminantes." },
-            { title: "BUS ELECTRICO", description: "Señalización específica para vehículos de propulsión eléctrica." },
+            { title: "CERO EMISION BUS ELECTRICO", description: "Indicador que identifica buses eléctricos con cero emisiones contaminantes." },
             { title: "NUMERO INTERNO", description: "Identificador numérico interno del bus en la flota." },
             { title: "SEÑAL SUBIDA Y BAJADA", description: "Indicadores que muestran los puntos correctos para subir y bajar del vehículo." },
             { title: "ACCESO SILLA DE RUEDAS", description: "Señalización para acceso y ubicación de personas con movilidad reducida." },
             { title: "VIRAJE AMPLIO", description: "Advertencia sobre el radio de giro amplio que requiere el vehículo." },
             { title: "MARCA CHILE", description: "Logo oficial de la marca país Chile en la carrocería." },
-            { title: "REFLECTANTE", description: "Elementos reflectantes de seguridad en diferentes áreas de la carrocería." },
-            { title: "ESPEJO PUNTO CIEGO", description: "Espejos adicionales para reducir los puntos ciegos del conductor." },
-            { title: "TRASERO", description: "Señalización y normativa aplicable a la parte trasera del vehículo." },
+            { title: "REFLECTANTE ESPEJO", description: "Elementos reflectantes de seguridad en espejos del vehículo." },
+            { title: "PUNTO CIEGO TRASERO", description: "Señalización relacionada con los puntos ciegos en la parte trasera." },
             { title: "TRIANGULO PUNTO CIEGO", description: "Señalización triangular que advierte sobre los puntos ciegos." },
             { title: "LOGO CLASE A Y B", description: "Identificador visual de buses pertenecientes a las clases A y B." },
-            { title: "LOGO CLASE C", description: "Identificador visual de buses pertenecientes a la clase C." },
+            { title: "LOGO CLACE C", description: "Identificador visual de buses pertenecientes a la clase C." },
             { title: "NO SUBIR", description: "Señalización que indica prohibición de subir en determinadas áreas." },
             { title: "CUIDADO APERTURA Y CIERRE DE PUERTAS", description: "Advertencia sobre el sistema automático de apertura y cierre de puertas." },
             { title: "NO TE APOYES", description: "Indicación de no apoyarse en ciertas áreas para evitar accidentes." },
@@ -4822,14 +5088,28 @@
             { title: "SEÑAL PISO SILLA DE RUEDAS", description: "Señalización en el piso para la correcta ubicación de sillas de ruedas." },
             { title: "CUIDADO PELDAÑO", description: "Advertencia sobre los peldaños de acceso al vehículo." },
             { title: "ESPACIO RESERVADO", description: "Señalización de espacios reservados para diferentes necesidades." },
-            { title: "ASIENTO ABATIBLE", description: "Indicación de asientos que pueden plegarse para liberar espacio." },
-            { title: "USO PREFERENTE", description: "Señalización de áreas de uso preferente para personas con necesidades especiales." },
-            { title: "CENEFA", description: "Elemento decorativo tipo cenefa que cumple con la normativa visual." },
-            { title: "PPU", description: "Placa Patente Única visible según normativa de transporte." },
+            { title: "ASIENTO ABATIBLE USO PREFERENTE", description: "Indicación de asientos abatibles reservados para uso preferente." },
+            { title: "CENEFA PPU", description: "Elemento decorativo tipo cenefa junto con la Placa Patente Única visible." },
             { title: "SOAP", description: "Información visible del Seguro Obligatorio de Accidentes Personales." },
             { title: "CANAL DE DENUNCIAS", description: "Información sobre los canales oficiales para realizar denuncias." },
             { title: "BUENAS PRACTICAS", description: "Adhesivos informativos sobre buenas prácticas para los usuarios." }
         ];
+        // Añadir clase para animar elementos que necesitan atención
+        document.head.insertAdjacentHTML('beforeend', `
+<style>
+    @keyframes pulse-animation {
+        0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+        50% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
+        100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+    }
+    
+    .pulse-animation {
+        animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+    }
+</style>
+`);
+
+
     </script>
 </body>
 
